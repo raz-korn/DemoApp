@@ -79,6 +79,8 @@ resources:
 - name: nsbusinesspartners-uaa
   type: org.cloudfoundry.managed-service
   parameters:
+    config:
+      xsappname: DemoApp-${space}
     path: ./xs-security.json
     service: xsuaa
     service-name: nsbusinesspartners-xsuaa-srv
