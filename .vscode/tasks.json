@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"label": "build:mta",
+			"script": "build:mta"
+		},
+		{
+			"type": "deploy.mta.cf",
+			"label": "Template: Deploy MTA to Cloud Foundry: businesspartners//home/user/projects/businesspartners/mta_archives/nsbusinesspartners_0.0.1.mtar",
+			"taskType": "Deploy",
+			"mtarPath": "/home/user/projects/businesspartners/mta_archives/nsbusinesspartners_0.0.1.mtar",
+			"cfTarget": "dev",
+			"cfEndpoint": "https://api.cf.us10.hana.ondemand.com",
+			"cfOrg": "LCNCTest_lcnctest-raz-i5jmna3c",
+			"cfSpace": "dev",
+			"extensions": []
+		}
+	]
+}
